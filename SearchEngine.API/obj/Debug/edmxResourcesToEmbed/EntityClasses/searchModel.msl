@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="searchModelStoreContainer" CdmEntityContainer="searchModelContainer">
+    <EntitySetMapping Name="Searches">
+      <EntityTypeMapping TypeName="IsTypeOf(searchModel.Search)">
+        <MappingFragment StoreEntitySet="Searches">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sentence" ColumnName="Sentence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MostSearches">
+      <EntityTypeMapping TypeName="IsTypeOf(searchModel.MostSearch)">
+        <MappingFragment StoreEntitySet="MostSearches">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Words" ColumnName="Words" />
+          <ScalarProperty Name="OnDate" ColumnName="OnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
