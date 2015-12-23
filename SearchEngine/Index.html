@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="mainApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Search Engine - AngularJS</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />                                     <link href="Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="mainDiv col-lg-12">
+        <div>
+            <a href="#/Home">Home</a>
+            <a href="#/Search">Search</a>
+            <a href="#/About">About</a>
+        </div>
+        <div data-ng-view=""></div>
+
+    </div>
+    <div class="footer">
+        <p>
+            Design inspiration by <span title="https://design.ubuntu.com">UBUNTU</span>
+        </p>
+    </div>
+    <div>
+        <!-- Angular scripts -->
+        <script src="Scripts/angular.min.js"></script>
+        <script src="Scripts/angular-route.min.js"></script>
+        <script src="Scripts/angular-resource.min.js"></script>
+        <script src="App/mainApp.js"></script>
+        <script src="App/Services/serviceApp.js"></script>
+        <script src="App/Services/getData.js"></script>
+    </div>
+</body>
+    
+    
+</html>
